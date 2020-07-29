@@ -1,0 +1,99 @@
+﻿.button{
+    border:none;
+    outline:none;
+    color:white;
+    text-align:center;
+    overflow:hidden;
+    padding:15px 0;
+    margin-top:5px;
+    font-family:'Segoe UI';
+    font-size:calc(10px + 0.2vw);
+    text-transform:uppercase;
+    position:relative;
+    width:230px;
+    cursor: pointer;
+}
+.button:active {
+    transition: background 0s;
+    transform: scale(0.95);
+    outline: none !important;
+    border: none !important;
+}
+
+.button-disabled{
+    cursor:default;
+    background-color:#aaa;
+    outline:none;
+    border:none;
+}
+.button-rounded{
+    border-radius:50px;
+}
+
+.button-success{
+    background-color:steelblue;
+    border:none;
+}
+.button-success:hover {
+    background: steelblue radial-gradient(circle, transparent 1%, steelblue 1%) center/15000%;
+}
+.button-outlined {
+    background-color: orange;
+    border: thin solid orange;
+    color: white;
+}
+.button-outlined::after,
+.button-success::after{
+    content:'';
+    position:absolute;
+    top:-100px;
+    right:-520px;
+    height:200px;
+    width:500px;
+    background:linear-gradient(transparent,rgba(255,255,255,0.3));
+    transform:rotate(120deg);
+}
+.button-outlined::before,
+.button-success::before{
+    content:'';
+    position:absolute;
+    top:-30px;
+    left:-80px;
+    height:100px;
+    width:70px;
+    background-color:rgba(255,255,255,0.7);
+    transform:rotate(20deg);
+}
+.button-outlined:hover{
+    color: white;
+}
+.button-outlined:hover::before,
+.button-success:hover::before{
+    transition: all 0.3s;
+    left:250px;
+}
+.button-outlined:hover::after,
+.button-success:hover::after{
+    transition: all 0.7s;
+    right:-120%;
+}
+.button:hover i{
+    padding-left:5%;
+}
+
+.btn-dashed{
+    padding: 5px;
+    border: thin dashed orange;
+    border-radius: 3px;
+    color: orange;
+    margin: 10px 0 10px 0;
+    text-align: center;
+    cursor: pointer;
+}
+.btn-dashed:hover{
+    border-color: steelblue;
+    color: steelblue;
+}
+.btn-dashed:active{
+    transform: scale(0.95);
+}

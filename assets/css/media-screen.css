@@ -1,0 +1,120 @@
+@media screen and (max-width:770px)
+{
+    h1{
+        font-size: calc(18px + 0.5vw);
+    }
+    h3{
+        font-size: calc(12px + 1vw);
+    }
+    .hero{
+        background-size: cover;
+        background-position: center;
+    }
+    .overlay{
+        background-color: rgba(255,255,255,0.75);
+    }
+    nav{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    
+    .hero-content{
+        width: 85vw;
+        text-align: center;
+    }
+    .hero-content > h1{
+        font-size: calc(27px + 1vw);
+        white-space: normal;
+        display: block;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    .hero-content > h3{
+        font-size: calc(20px + 1vw);
+        margin-bottom: 50px;
+        white-space: normal;
+        display: block;
+        box-sizing: border-box;
+    }
+    .hero-content > button{
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        margin-left: auto;
+    }
+    
+    .custom-order{
+        display: block;
+    }
+    .custom-order > div{
+        width: 100% !important;
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+    .custom-order > div:first-child > img{
+        width: 100% !important;
+    }
+    .custom-order > div:last-child{
+        border-left: none;
+    }
+    .modalbox{
+        width: 85vw !important;
+        margin-left: 7% !important;
+    }
+    
+    
+    .page-preloader{
+        width:35% !important;
+    }
+    
+    .wrapper > div,
+    .backend > div{
+        display: block;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .wrapper > div > div,
+    .backend > div > div{
+        width: 100% !important;
+    }
+    .wrapper > div > .content-container,
+    .backend > div > .backend-container{
+        margin-top: 20px;
+        padding: 0;
+        display: block !important;
+    }
+    .wrapper > div > .content-container > div,
+    .backend > div > .backend-container > div{
+        width: 100% !important;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .flex-deflex{
+        flex-direction: column;
+    }
+
+
+
+    /*Admin backend*/
+    .caption > img{
+        width: 25vw;
+    }
+    .content-container{
+        padding-left: 0;
+    }
+    .user-list > div:last-child{
+        position: absolute;
+        right: 0;
+        top: 40px;
+        background-color: white;
+        border: thin solid #eee;
+        display: none;
+    }
+    .user-list > div:nth-child(2){
+        display: block;
+    }
+    .make-responsive{
+        flex-direction: column;
+    }
+}

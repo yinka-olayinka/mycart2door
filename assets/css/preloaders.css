@@ -1,0 +1,40 @@
+﻿.linear{
+    width:15vw;
+    height:2px;
+    background-color:#e5e5e5;
+    overflow:hidden;
+    border:none;
+    outline:none;
+    margin:auto auto;
+}
+.alternate{
+    width:10px;
+    height:100vh;
+    background-color:#017a10;
+    border:none;
+    outline:none;
+    transition:all 0.5s;
+	animation:preload 0.9s linear infinite alternate;
+}
+@keyframes preload { 
+    0%{
+        margin-left:0;
+        width:50%;
+    }
+    25%{
+        margin-left:25%;
+        width:30%;
+    }
+    50%{
+        margin-left:50%;
+        width:80%;
+    }
+    75%{
+        margin-right:25%;
+        width:30%;
+    }
+    100%{
+        margin-right:0;
+        width:50%;
+    }
+}
